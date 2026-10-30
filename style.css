@@ -1,0 +1,151 @@
+:root{
+  --sidebar:#b19c9e; 
+  --header:#ddd0d2;  
+  --tag:#cdbcbe; 
+  --text: #333;  
+  --contentcolor:#fff;
+}
+
+*{
+  font-family: 微軟正黑體;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  color:var(--text);
+  letter-spacing:0.08em;
+}
+
+.page{
+  width:210mm;
+  height:297mm;
+  margin:20px auto;
+  background:var(--background);
+  display:grid;
+  grid-template-columns:34% 66%;
+  grid-template-rows:190px 1fr;
+}
+
+.sidebar{
+  grid-column:1;
+  grid-row:1 / 3 ;
+  background:var(--sidebar);
+  color:var(--contentcolor);
+  padding:0 26px;
+}
+
+.photo{
+  width:170px;
+  height:170px;
+  margin:38px auto 40px;
+  border-radius:50%;
+  overflow:hidden;
+}
+
+/* .photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+} */
+
+.sidetitle{
+  font-size:25px;
+  font-weight:600;
+  letter-spacing:0.1em;
+  margin:0 0 16px 10px;  
+}
+
+.intro{
+  font-size: 14px;
+  line-height:1.5;
+  padding:0 6px;
+  margin-bottom:70px;
+}
+
+ul{
+  list-style:none;
+  padding-left:0;
+  margin:0;
+  line-height:1.5;
+}
+
+ul li{
+  line-height:1.5;
+  margin-bottom:8px;
+}
+
+.contact{
+  font-size: 11px;
+  list-style:none;
+  padding:0.6px;
+}
+
+.contact li{
+  line-height:1.5;
+  display:flex;
+  align-items:flex-start;
+  word-break:break-all;
+}
+
+header{
+  grid-column:2;
+  grid-row:1;
+  background:var(--header);
+  display:flex;
+  align-items:center;
+  padding-left:60px;
+}
+
+header h1{
+  font-size:40px;
+  font-weight: 600;
+}
+
+main{
+  font-size: 15px;
+  grid-cloumn:2;
+  grid-row:2;
+  padding:40px 50px 40px 40px;
+  
+}
+/* section{
+  margin-bottom:26px;
+} */
+
+.sectiontitle{
+  font-size: 25px;
+  font-weight: 600;
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-top:26px;
+  margin-bottom:26px;
+}
+
+.sectiontitle::before{
+  content:"";
+  width:18px;
+  height:18px;
+  background:var(--tag);
+  clip-path:polygon(0 0, 55% 0, 100% 50%, 55% 100%, 0 100%, 45% 50%);
+  
+}
+
+.sectionskill p{
+  margin-bottom:10px;
+  line-height:1.5;
+}
+
+.job{
+  font-size: 15px;
+  display:flex;
+  justify-content:space-between;
+  line-height:1.5;
+}
+
+.job h3{
+  font-weight: 400;
+  font-size:15px;
+}
